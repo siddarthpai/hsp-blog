@@ -1,12 +1,13 @@
 
 ---
+
 title: "Introduction to Flutter"
 date: "2023-02-06"
 tags: [beginners,flutter,introduction]
 description: The perfect guide to get you into app development !
-
 author_name: Siddarth.D.Pai
-author_link: https://github.com/siddarthpai
+author_link: https://github.com/siddarthpai 
+
 ---
 
 
