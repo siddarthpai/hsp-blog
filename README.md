@@ -1,14 +1,5 @@
 
----
 
-title: "Introduction to Flutter"
-date: "2023-02-06"
-tags: [beginners,flutter,introduction]
-description: The perfect guide to get you into app development !
-author_name: Siddarth.D.Pai
-author_link: https://github.com/siddarthpai 
-
----
 
 
 
@@ -28,7 +19,7 @@ Well, now you must be intrigued as to what is Dart?
 
 # Overview of Dart:
 
-Dart is the programming language used by Flutter to build cross-platform mobile apps. It’s compiled using Google’s compiler called dart into an intermediate representation that runs on both iOS and Android devices without modification.
+*Dart is the programming language used by Flutter to build cross-platform mobile apps. It’s compiled using Google’s compiler called dart into an intermediate representation that runs on both iOS and Android devices without modification.*
 
 -   [Dart](https://dart.dev/)  is a client-optimized, free and open-source language used to develop fast apps on any platform.
 -   Dart is mainly optimized for UI, it is fast on all platforms as it can compile to ARM & x64 machine code for mobile, desktop, and backend or compile to JavaScript for the web.
@@ -66,16 +57,16 @@ Before we get into developing our first app, let us look at a few terminologies 
 
 ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/safearea.jpg?raw=true)
 
-(Demonstration of SafeArea widget)
+*(Demonstration of SafeArea widget)*
 
 ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/text.jpg?raw=true)
 
-(Demonstration of Text widget)
+*(Demonstration of Text widget)*
 
 6.  **Widget Tree:**  To create an interactive UI, we combine multiple widgets together in flutter according to how we want to display them on-screen and these are known as widget trees.
 ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/wt.jpg?raw=true)
 
-(Demonstration of widget tree)
+*(Demonstration of widget tree)*
 
 9.  **MaterialApp:**  Material apps are a set of predefined widgets which implement Google’s material design guidelines on both mobile and desktop platforms.Like the style app bar, the looks of the button, the alerts, etc.
 10.  **Cupertino design:**  This is the iOS-specific type of design that we generally see in all iOS apps.
@@ -88,7 +79,7 @@ Before we get into developing our first app, let us look at a few terminologies 
 15.  **Scaffold:**  Scaffolds are visual components that provide a default structure for your app, and have a variety of hooks for customizing their appearance. On iOS they serve as the “App” screen providing several screens to capture user actions throughout your app, and on Android there is currently only one Scaffold which contains an AppBar but it can be customized with a TabBar or BottomNavigation.
 ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/appbar.jpg?raw=true)
 
-(Demonstration of the AppBar Scaffold)
+*(Demonstration of the AppBar Scaffold)*
 
 18.  **initState function :**  This function is used to write instructions which need to be executed before the widget tree is built. For example: fetching data from API, Database etc
 
@@ -107,24 +98,24 @@ Let’s also have a look at commonly used widgets which you’ll use when develo
     ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/ob.jpg?raw=true)
     ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/rb.jpg?raw=true)
     
-    (Visual's of some of the many kind of buttons in flutter)
+    *(Visual's of some of the many kind of buttons in flutter)*
     
     The main difference between these buttons are the way they appear on screen and what all of there properties are modifiable. The compulsory arguments for them are onPressed and child. onPressed takes an anonymous function or a reference to a named function which contains the instructions that are to be executed on click of the button. child takes the widget that we want to show on the button usually it is a text widget. In the icon button the other compulsory widget is not the child but icon, it takes the icon data in it’s argument.
 6.  **Row/Column:**  these widgets are used to arrange elements one after the other horizontally/vertically. They take the children argument, which is an array of widgets.
 
 ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/row.jpg?raw=true)
 
-Row layout
+*Row layout*
 
 ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/column.jpg?raw=true)
 
-Column layout
+*Column layout*
 
-(Demonstration of row column layout)
+*(Demonstration of row column layout)*
 
 9.  **Alert Dialog:**  an alert dialog is used to present a message/question/confirmations on the screen and to that waits for a user action. It has arguments like title, content, actions, etc.
 
-💡Tip: Multiple widgets that don’t need any change but will still be rebuilt on calling setState function. So, to avoid doing that, we write const in front of the widgets that are going to always remain the same.
+*💡Tip: Multiple widgets that don’t need any change but will still be rebuilt on calling setState function. So, to avoid doing that, we write const in front of the widgets that are going to always remain the same.*
 
 Now that we've covered all the pre-requisite topics, let's actually code our first app (Building the  [Am I Rich App](https://en.wikipedia.org/wiki/I_Am_Rich))
 
@@ -150,9 +141,9 @@ STEP 2: You should now see a page asking for Project name. Lets name our project
 
 ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/7.jpg?raw=true)
 
-STEP 3: Feel free to configure the package name By convention its usually named after your company domain name as shown com.'company_name'.iamrich or if you dont have a company domain, name it com.'your_name'.iamrich
+STEP 3: Feel free to configure the package name By convention its usually named after your company domain name as shown com.<company_name>.iamrich or if you dont have a company domain, name it com.<your_name>.iamrich
 
-Now, click on Finish and now Android Studio will create your first Flutter Project 🥳🥳
+*Now, click on Finish and now Android Studio will create your first Flutter Project 🥳🥳*
 
 ## Setting up the Android Emulator
 
@@ -195,7 +186,12 @@ Now, note by default the text aligns to the top left corner
 
 Now if we want to align the text in the centre then we use centre widget and then put the text widget as a child widget to the centre widget as shown below:
 
-`void main() { runApp(MaterialApp(home: Center(child: Text('Hello World')))); }`
+
+
+	void main() { 
+		runApp(MaterialApp(home: Center(child: Text('Hello World')))); 
+		}
+
 
 Output:
 
@@ -204,14 +200,30 @@ Output:
 -   Centre widget responsible for laying out stuff in the centre of the screen
 -   Text widget is responsible for putting text and styling text
 
-💡NOTE:  
--It is recommended by flutter team to put a comma after each parenthesis so that when we reformat the code with reformatter provided by dart it becomes neater  
-- main is important because the code executes from main. It is the starting point of all the flutter apps  
-- ‘//’ are used to write comments
+*💡NOTE:*
+-*It is recommended by flutter team to put a comma after each parenthesis so that when we reformat the code with reformatter provided by dart it becomes neater* 
+- *main is important because the code executes from main. It is the starting point of all the flutter apps*  
+- *‘//’ are used to write comments*
+
 
 Now, well add an AppBar(a widget) to our Scaffold and give it a color using the 'backgroundColor' property as follows:
 
-`void main() { runApp( MaterialApp( home: Scaffold( backgroundColor: Colors.black, appBar: AppBar( title: Text('I Am Rich'), backgroundColor: Colors.red, ), ), ), ); }`
+
+
+	void main() { 
+		runApp( 
+			MaterialApp( 
+				home: Scaffold( 
+				 backgroundColor: Colors.black, 
+				 appBar: AppBar( 
+					 title: Text('I Am Rich'), 
+					 backgroundColor: Colors.red, 
+					 ), 
+					), 
+				), 
+			); 
+		}
+
 
 Output:
 
@@ -241,32 +253,36 @@ Let’s do image:asset which will take a local project file and use it in your a
 5.  Now, do pub get to import your image inside the project
 6.  Now in the main.dart file add the following code as shown :  
 
-    `void main() { 
-    runApp( 
-	    MaterialApp( 
-		    home: Scaffold( 
-			    backgroundColor: Colors.black, 
-			    appBar: AppBar( 
-				    title: Text('I Am Rich'), 
-				    backgroundColor: Colors.red, ), 
-				    body: Center( 
-					    child: Image( 
-						    image: AssetImage('images/diamond.png'), 
-						   ), 
-						  ), 
-						 ), 
-						), 
-					); 
-				}`
-    Output  
+	     void main() { 
+		     runApp( 
+	        	    MaterialApp( 
+	        		    home: Scaffold( 
+	        			    backgroundColor: Colors.black, 
+	        			    appBar: AppBar( 
+	        				    title: Text('I Am Rich'), 
+	        				    backgroundColor: Colors.red, ), 
+	        				    body: Center( 
+	        					    child: Image( 
+	        						    image: AssetImage('images/diamond.png'), 
+	        						   ), 
+	        						 ), 
+	        					       ), 
+	        					    ), 
+	        					); 
+	        				}
+	
+    
+Output  
     ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/16.jpg?raw=true)  
     [Click here to download the Diamond Image](https://www.siddarthdpai.com/blog4/build/static/media/diamond.bca062e4c59f0e6f8cd5.png)
 7.  Now what if we have 20-30 images we want to put into the app then putting each images name along with indentation under the asset main class in the .yaml file will be very hard to do and hence we can just write the name of the folder containing the images, as shown below :  
-    `assets: 
-    -images/ `  
+    
+    assets: 
+	  -images/ 
       
-    and then include the image file in the main.dart file
-
+      
+    
+and then include the image file in the main.dart file
 💡NOTE : The pubspec.yaml file is the main configuration file for your Flutter app.
 
 # Congrats on Developing your first app 🥳🥳🥳🥳🥳
