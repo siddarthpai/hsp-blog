@@ -55,16 +55,16 @@ Before we get into developing our first app, let us look at a few terminologies 
 
 1.  **Widget:**  Widgets are the fundamental UI unit in Flutter. They represent an interactive element of a user interface such as a button or text field. Flutter offers a range of widgets that we can use and modify as per our needs. You can find them on the documentation page on the  [widget catalog page.](https://docs.flutter.dev/development/ui/widgets)
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/safearea.jpg?raw=true)
+![](https://i.imgur.com/1MGnQTj.png)
 
 *(Demonstration of SafeArea widget)*
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/text.jpg?raw=true)
+![](https://i.imgur.com/soh5Ef5.png)
 
 *(Demonstration of Text widget)*
 
 6.  **Widget Tree:**  To create an interactive UI, we combine multiple widgets together in flutter according to how we want to display them on-screen and these are known as widget trees.
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/wt.jpg?raw=true)
+![](https://i.imgur.com/XEBAGOa.png)
 
 *(Demonstration of widget tree)*
 
@@ -77,7 +77,7 @@ Before we get into developing our first app, let us look at a few terminologies 
 13.  **Stateful Widgets:**  These are those widgets that changes itself/sub widgets during the runtime of the app. It basically rebuilds the widget tree whenever there is a change in state.
 14.  **Pub:**  Pub is the package manager for the Dart programming language, containing reusable libraries & packages for Flutter, AngularDart, and general Dart programs. So basically pub is the same as npm or any other package manager but it is specific to dart and flutter.
 15.  **Scaffold:**  Scaffolds are visual components that provide a default structure for your app, and have a variety of hooks for customizing their appearance. On iOS they serve as the “App” screen providing several screens to capture user actions throughout your app, and on Android there is currently only one Scaffold which contains an AppBar but it can be customized with a TabBar or BottomNavigation.
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/appbar.jpg?raw=true)
+![](https://i.imgur.com/e65FklM.png)
 
 *(Demonstration of the AppBar Scaffold)*
 
@@ -95,19 +95,19 @@ Let’s also have a look at commonly used widgets which you’ll use when develo
     iii)Outlined button  
     iv) Icon button.  
     
-    ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/ob.jpg?raw=true)
-    ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/rb.jpg?raw=true)
+    ![](https://i.imgur.com/SjtE3Xl.png)
+    ![](https://i.imgur.com/1pdflIP.png)
     
     *(Visual's of some of the many kind of buttons in flutter)*
     
     The main difference between these buttons are the way they appear on screen and what all of there properties are modifiable. The compulsory arguments for them are onPressed and child. onPressed takes an anonymous function or a reference to a named function which contains the instructions that are to be executed on click of the button. child takes the widget that we want to show on the button usually it is a text widget. In the icon button the other compulsory widget is not the child but icon, it takes the icon data in it’s argument.
 6.  **Row/Column:**  these widgets are used to arrange elements one after the other horizontally/vertically. They take the children argument, which is an array of widgets.
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/row.jpg?raw=true)
+![](https://i.imgur.com/jr2ELrZ.png)
 
 *Row layout*
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/column.jpg?raw=true)
+![](https://i.imgur.com/t7prVQm.png)
 
 *Column layout*
 
@@ -125,13 +125,13 @@ Now that we've covered all the pre-requisite topics, let's actually code our fir
 
 STEP 1: Open Android Studio and click on Configure :
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/5.jpg?raw=true)
+![](https://i.imgur.com/9jy5Fc8.jpg)
 
 STEP 2: Click on Settings and go to the Plugins tab and install the Flutter Plugin
 
 STEP 3: Restart the IDE and now you should see a Create New Flutter Project tab
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/6.jpg?raw=true)
+![](https://i.imgur.com/Tocwm31.jpg)
 
 ## 2) Project Creation :
 
@@ -139,7 +139,7 @@ STEP 1: Click on Create New Flutter Project and click on Flutter Application
 
 STEP 2: You should now see a page asking for Project name. Lets name our project i_am_rich .
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/7.jpg?raw=true)
+![](https://i.imgur.com/IfycL8a.jpg)
 
 STEP 3: Feel free to configure the package name By convention its usually named after your company domain name as shown com.<company_name>.iamrich or if you dont have a company domain, name it com.<your_name>.iamrich
 
@@ -157,11 +157,11 @@ Step 2: Click on Create Virtual Device and choose a phone (I chose the Pixel 4) 
 
 Step 3: Now click on the icon again and click on the run icon to start the device(under Actions) and your virtual device should boot up
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/8.jpg?raw=true)
+![](https://i.imgur.com/fs8pHKl.jpg)
 
 Now you can run all the apps you build by selecting device as the Emulator device and run it. (feel free to try it with the default starter app which is a counter app)
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/9.jpg?raw=true)
+![](https://i.imgur.com/OMjyHKd.jpg)
 
 ## Building Our App
 
@@ -172,15 +172,15 @@ All the content that is rendered onto the app is inside the main.dart file which
 
 Initially, it should look like this (don't get perplexed by the huge size 😂)
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/10.jpg?raw=true)
+![](https://i.imgur.com/REgKoig.jpg)
 
 To make a simple Hello World program, we'll do as follows:
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/11.jpg?raw=true)
+![](https://i.imgur.com/Ws7FyqI.jpg)
 
 Output:
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/12.jpg?raw=true)
+![](https://i.imgur.com/gzdpLDg.jpg)
 
 Now, note by default the text aligns to the top left corner
 
@@ -195,7 +195,7 @@ Now if we want to align the text in the centre then we use centre widget and the
 
 Output:
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/13.jpg?raw=true)
+![](https://i.imgur.com/wi8bNT7.jpg)
 
 -   Centre widget responsible for laying out stuff in the centre of the screen
 -   Text widget is responsible for putting text and styling text
@@ -227,7 +227,7 @@ Now, well add an AppBar(a widget) to our Scaffold and give it a color using the 
 
 Output:
 
-![](https://github.com/siddarthpai/hsp-blog/blob/main/img/14.jpg?raw=true)
+![](https://i.imgur.com/xKQlB8x.jpg)
 
 Now, we have to just insert the image onto our app:
 
@@ -244,7 +244,7 @@ Let’s do image:asset which will take a local project file and use it in your a
 1.  We’ll create a new directory inside the flutter app folder and name it images and we’ll put the images we want to use in that folder
 2.  After putting the image in that folder,now open the pubspec.yaml file
 3.  Now, we need to  **UNCOMMENT**  the asset section  
-    ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/15.jpg?raw=true)
+    ![](https://i.imgur.com/8NNEb5c.jpg)
 4.  And just add the name of your picture as shown below  
     `assets: - images/diamond.png`  
     
@@ -273,7 +273,7 @@ Let’s do image:asset which will take a local project file and use it in your a
 	
     
 Output  
-    ![](https://github.com/siddarthpai/hsp-blog/blob/main/img/16.jpg?raw=true)  
+    ![](https://i.imgur.com/a87vwlh.jpg)  
     [Click here to download the Diamond Image](https://www.siddarthdpai.com/blog4/build/static/media/diamond.bca062e4c59f0e6f8cd5.png)
 7.  Now what if we have 20-30 images we want to put into the app then putting each images name along with indentation under the asset main class in the .yaml file will be very hard to do and hence we can just write the name of the folder containing the images, as shown below :  
     
