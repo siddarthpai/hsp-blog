@@ -244,9 +244,13 @@ Let’s do image:asset which will take a local project file and use it in your a
 1.  We’ll create a new directory inside the flutter app folder and name it images and we’ll put the images we want to use in that folder
 2.  After putting the image in that folder,now open the pubspec.yaml file
 3.  Now, we need to  **UNCOMMENT**  the asset section  
-    ![](https://i.imgur.com/8NNEb5c.jpg)
+    ![](https://i.imgur.com/foviy5Z.jpg)
 4.  And just add the name of your picture as shown below  
-    `assets: - images/diamond.png`  
+    
+	    assets: 
+	      - images/diamond.png
+	
+	  
     
     BE VERY CAREFUL ABOUT INDENTATION (TWO SPACES IS CONSIDERED AS INDENTATION.)
     
@@ -275,10 +279,11 @@ Let’s do image:asset which will take a local project file and use it in your a
 Output  
     ![](https://i.imgur.com/a87vwlh.jpg)  
     [Click here to download the Diamond Image](https://www.siddarthdpai.com/blog4/build/static/media/diamond.bca062e4c59f0e6f8cd5.png)
+
 7.  Now what if we have 20-30 images we want to put into the app then putting each images name along with indentation under the asset main class in the .yaml file will be very hard to do and hence we can just write the name of the folder containing the images, as shown below :  
     
-    assets: 
-	  -images/ 
+	    assets: 
+	     -images/ 
       
       
     
